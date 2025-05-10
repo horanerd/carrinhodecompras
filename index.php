@@ -9,9 +9,9 @@ session_start();
 
 $products = [
     1 => ['id' => 1, 'name' => 'geladeira', 'price' => 1000, 'quantity' => 1],
-    2 => ['id' => 1, 'name' => 'mouse', 'price' => 100, 'quantity' => 1],
-    3 => ['id' => 1, 'name' => 'teclado', 'price' => 10, 'quantity' => 1],
-    4 => ['id' => 1, 'name' => 'monitor', 'price' => 5000, 'quantity' => 1],
+    2 => ['id' => 2, 'name' => 'mouse', 'price' => 100, 'quantity' => 1],
+    3 => ['id' => 3, 'name' => 'teclado', 'price' => 10, 'quantity' => 1],
+    4 => ['id' => 4, 'name' => 'monitor', 'price' => 5000, 'quantity' => 1],
 ];
 
 if(isset($_GET['id'])) {
@@ -38,6 +38,7 @@ var_dump($_SESSION['cart'] ?? ['']);
     <title>Document</title>
 </head>
 <body>
+    <a href="mycart.php" >Go to Cart </a>
     <ul>
 
         <li>Geladeira <a href="?id=1"> ADD </a>R$ 1000</li>
